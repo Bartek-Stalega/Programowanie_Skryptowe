@@ -11,7 +11,7 @@ parser.add_argument('-k', "--keyword", help="Słowo klucz które ma zawierać wy
 
 args = parser.parse_args()
 # Wczytywanie parametrów
-api_key = 'api-key'
+api_key = 'dc633b74e6004610b1acd80a9329282c'
 url = f'https://newsapi.org/v2/everything?'
 params = {
     "q": args.keyword,
@@ -32,11 +32,11 @@ if data["status"] == "ok":
         print()
         print("--------------------------------------------------------------------------------------")
         print()
-        print(f"{x}. {article["title"]}")
-        print(f"Źródło: {article["source"]["name"]}")
-        print(f"Autor: {article["author"]}")
-        print(f"Data wydania: {article["publishedAt"]}")
-        print(f"URL: {article["url"]}")
+        print(f"{x}. {article['title']}")
+        print(f"Źródło: {article['source']['name']}")
+        print(f"Autor: {article['author']}")
+        print(f"Data wydania: {article['publishedAt']}")
+        print(f"URL: {article['url']}")
     print()
     print("--------------------------------------------------------------------------------------")
     print()
