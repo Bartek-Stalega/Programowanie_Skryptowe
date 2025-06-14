@@ -1,6 +1,6 @@
 import shodan
 
-api = shodan.Shodan("arwcnVtMJnRCMMlIfQ01H7fcQvA1em79")
+api = shodan.Shodan("APIKEY")
 ip = "8.8.8.8"
 info = api.host(ip)
 data = info["data"][1]
